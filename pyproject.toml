@@ -1,0 +1,20 @@
+[project]
+name = "kontext-controlnet-fix"
+version = "1.0.0"
+description = "Fixes the shape-mismatch crash when combining Flux Kontext ReferenceLatent with any ControlNet node (upstream PR #9180)."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["comfyui", "flux", "kontext", "controlnet", "fix", "patch"]
+
+[project.urls]
+Homepage   = "https://github.com/vrocg/kontext-controlnet-fix"
+Repository = "https://github.com/vrocg/kontext-controlnet-fix"
+"Bug Tracker" = "https://github.com/vrocg/kontext-controlnet-fix/issues"
+"Upstream Fix" = "https://github.com/comfyanonymous/ComfyUI/pull/9180"
+
+[tool.comfy]
+PublisherId = "vrocg"
+DisplayName = "Kontext ControlNet Fix"
+Icon = ""
+Tags = ["flux", "kontext", "controlnet", "fix", "patch", "runtime"]
