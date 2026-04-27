@@ -200,6 +200,20 @@ ComfyUI. No other files are affected.
 
 ---
 
+## Author
+
+**VixDreamer** — AI image workflows & ComfyUI tools
+
+| Platform | Handle |
+|----------|--------|
+| GitHub | [@VixDreamer](https://github.com/VixDreamer) |
+| Discord | `Vroc` |
+| Twitter / X | [@VixDreams](https://x.com/VixDreams) |
+
+Feel free to reach out if you run into issues or have suggestions!
+
+---
+
 ## License
 
 [MIT](LICENSE)
