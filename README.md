@@ -100,6 +100,34 @@ adds nothing to the ComfyUI canvas. Its only effect is preventing the crash.
 
 ---
 
+## Example Workflow
+
+A ready-to-use workflow is included in the [`/workflows`](workflows/) folder:
+
+**[`VixDreams_Kontext_ControlNet_v3.json`](workflows/VixDreams_Kontext_ControlNet_v3.json)**
+
+> Full 2-pass pipeline: Flux Kontext + OpenPose ControlNet + identity refinement pass
+
+```
+PASS 1 — Flux Kontext + ControlNet OpenPose
+  LoadImage (character)  →  FluxKontextImageScale  →  VAEEncode
+  LoadImage (pose ref)   →  DWPreprocessor  →  ControlNetApplyAdvanced (strength=0.65, end=0.6)
+  ReferenceLatent + FluxGuidance + KSampler (25 steps, denoise=1.0)
+
+PASS 2 — Identity & skin refinement (no ControlNet)
+  P1 output  →  FluxKontextImageScale  →  VAEEncode
+  ReferenceLatent + FluxGuidance(2.5) + KSampler (20 steps, denoise=0.7)
+```
+
+**Required models:**
+- `flux1-kontext-dev-Q5_K_M.gguf` (or any Flux Kontext GGUF)
+- `t5-v1_1-xxl-encoder-Q5_K_M.gguf` + `clip_l.safetensors`
+- `ae.safetensors` (VAE)
+- `flux_union_controlnet_pro2.safetensors` (ControlNet)
+- Optional: your own LoRA (slot is bypassed by default)
+
+---
+
 ## Recommended ControlNet Parameters When Used with Flux Kontext
 
 Combining `ReferenceLatent` with a Flux ControlNet (Union / Canny / Depth /
