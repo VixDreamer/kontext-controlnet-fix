@@ -1,10 +1,10 @@
 {
-  "author": "vrocg",
+  "author": "VixDreamer",
   "title": "Kontext ControlNet Fix",
   "id": "kontext-controlnet-fix",
-  "reference": "https://github.com/vrocg/kontext-controlnet-fix",
+  "reference": "https://github.com/VixDreamer/kontext-controlnet-fix",
   "files": [
-    "https://github.com/vrocg/kontext-controlnet-fix"
+    "https://github.com/VixDreamer/kontext-controlnet-fix"
   ],
   "install_type": "git-clone",
   "description": "Runtime patch that fixes the shape-mismatch crash (RuntimeError on tensor dimension 1) when combining Flux Kontext ReferenceLatent with any ControlNet node. Monkey-patches Flux.forward_orig without touching core files. Idempotent — skips patching if the upstream fix (PR #9180) is already present.",

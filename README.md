@@ -86,7 +86,7 @@ and click **Install**, then restart ComfyUI.
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/vrocg/kontext-controlnet-fix
+git clone https://github.com/VixDreamer/kontext-controlnet-fix
 ```
 
 Then restart ComfyUI.
@@ -196,7 +196,7 @@ ComfyUI. No other files are affected.
 
 - **Root-cause analysis & upstream fix:**
   [comfyanonymous/ComfyUI#9180](https://github.com/comfyanonymous/ComfyUI/pull/9180)
-- **Monkey-patch implementation:** [vrocg](https://github.com/vrocg)
+- **Monkey-patch implementation:** [VixDreamer](https://github.com/VixDreamer)
 
 ---
 

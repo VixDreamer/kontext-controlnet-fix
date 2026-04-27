@@ -8,13 +8,13 @@ requires-python = ">=3.10"
 keywords = ["comfyui", "flux", "kontext", "controlnet", "fix", "patch"]
 
 [project.urls]
-Homepage   = "https://github.com/vrocg/kontext-controlnet-fix"
-Repository = "https://github.com/vrocg/kontext-controlnet-fix"
-"Bug Tracker" = "https://github.com/vrocg/kontext-controlnet-fix/issues"
+Homepage   = "https://github.com/VixDreamer/kontext-controlnet-fix"
+Repository = "https://github.com/VixDreamer/kontext-controlnet-fix"
+"Bug Tracker" = "https://github.com/VixDreamer/kontext-controlnet-fix/issues"
 "Upstream Fix" = "https://github.com/comfyanonymous/ComfyUI/pull/9180"
 
 [tool.comfy]
-PublisherId = "vrocg"
+PublisherId = "VixDreamer"
 DisplayName = "Kontext ControlNet Fix"
 Icon = ""
 Tags = ["flux", "kontext", "controlnet", "fix", "patch", "runtime"]
